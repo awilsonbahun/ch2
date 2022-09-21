@@ -1,0 +1,105 @@
+package Bread;
+public class SourdoughBread extends Bread{
+    private int flour;
+    private int water;
+    private int salt;
+    private int sugar;
+    private int bakingPowder;
+    private int yeast;
+    private String breadName;
+    private String state;
+    public SourdoughBread(int flour, int water, int salt, int sugar,
+                          int bakingPowder, int yeast,
+                          String breadName){
+    super(4, 3, 1, 2, 2,
+    3, "sourdough", "baked");
+
+    }
+    //Getters
+    public String getFlour() {
+        return flour;
+    }
+
+    public String getWater() {
+        return water;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public String getSugar() {
+        return sugar;
+    }
+
+    public String getBakingPowder() {
+        return bakingPowder;
+    }
+
+    public String getYeast() {
+        return yeast;
+    }
+
+    public String getBreadName() {
+        return breadName;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+
+    //Setters
+    public void setFlour(String flour) {
+        this.flour = flour;
+    }
+
+    public void setWater(String water) {
+        this.water = water;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public void setSugar(String Sugar) {
+        this.sugar = sugar;
+    }
+
+    public void setBakingPowder(String BakingPowder) {
+        this.bakingPowder = bakingPowder;
+    }
+
+    public void setYeast(String Yeast) {
+        this.yeast = yeast;
+    }
+
+    public void setBreadName(String breadName) {
+        this.breadName = breadName;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    
+    // Recipe method
+
+    public void recipe(String flour, String water, String salt, String sugar, String bakingPowder, String yeast, String breadName, String state, String recipe, String flour1, String water1, String salt1, String sugar1, String bakingPowder1, String yeast1, String breadName1, String state1, String recipe1) {
+        // Operation for recipe
+        System.out.println("Mix flour, water, salt, baking powder, yeast, and ripe sourdough starter.\n" +
+                "2. Make the dough\n" +
+                "3. Bulk Rise\n" +
+                "4. Stretch and fold the dough\n" +
+                "5. Cut and shape the dough\n" +
+                "6. Second rise\n" +
+                "6. Preheat the oven to 450°F towards the tail end of the second rise.\n" +
+                "7. Spray the laof with luke warm water.\n" +
+                "8. Bake the bread at 400°F for 20 minutes, until deep golden brown.\n" +
+                "9. Remove the bread from the oven.\n" +
+                "10.Let the bread cool until good to eat.");
+
+    }
+
+
+}
