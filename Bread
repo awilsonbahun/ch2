@@ -1,0 +1,126 @@
+public class Bread {
+    private int flour;
+    private int water;
+    private int salt;
+    private int sugar;
+    private int bakingPowder;
+    private int yeast;
+    private String breadName;
+    private String state;
+
+    //default constructor
+    public Bread(){
+        this(3,3,1,1,1, "Flatbread","baked","recipe");
+    }
+
+    //Constructor
+    public Bread(int flour, int water, int salt, int sugar,
+                 int bakingPowder, int yeast,
+                 String breadName, String state) {
+        this.flour = flour;
+        this.water = water;
+        this.salt = salt;
+        this.sugar = sugar;
+        this.bakingPowder = bakingPowder;
+        this.yeast = yeast;
+        this.breadName = breadName;
+        this.state = state;
+    }
+
+
+    //Getters
+    public int getFlour() {
+        return flour;
+    }
+
+    public int getWater() {
+        return water;
+    }
+
+    public int getSalt() {
+        return salt;
+    }
+
+    public int getSugar() {
+        return sugar;
+    }
+
+    public int getBakingPowder() {
+        return bakingPowder;
+    }
+
+    public int getYeast() {
+        return yeast;
+    }
+
+    public String getBreadName() {
+        return breadName;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+
+    //Setters
+    public void setFlour(int flour) {
+        this.flour = flour;
+    }
+
+    public void setWater(int water) {
+        this.water = water;
+    }
+
+    public void setSalt(int salt) {
+        this.salt = salt;
+    }
+
+    public void setSugar(int Sugar) {
+        this.sugar = sugar;
+    }
+
+    public void setBakingPowder(int BakingPowder) {
+        this.bakingPowder = bakingPowder;
+    }
+
+    public void setYeast(int Yeast) {
+        this.yeast = yeast;
+    }
+
+    public void setBreadName(String breadName) {
+        this.breadName = breadName;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+
+    //Bake method
+    public void Bake(String state) {
+        if (state.equals("notbaked")) {
+            state = "baked";
+            System.out.println("The bread is:"+ state);
+        }
+        else if(state.equals("notbaked")) {
+            System.out.println("The bread is baked");
+
+        }
+    }
+
+    //getIngredients method
+    public void getIngredients() {
+        System.out.println("The ingredients are :" + flour + "," + water + "," + sugar + ","
+                + salt + "," + yeast + "," + bakingPowder);
+    }
+        public void Recipe(){
+        System.out.println(+ flour +"cups of flour\n"+water+" cups of water\n"
+                    +salt+ " tsps of salt\n" +sugar+"tsp of sugar\n"+yeast+
+                    "tsp of yeast\n" +bakingPowder+ "tsp of bakingpowder");
+        }
+
+    }
+
+
+
+
